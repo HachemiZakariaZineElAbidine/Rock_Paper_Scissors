@@ -1,7 +1,7 @@
 package Pro;
 import java.util.Random;
 import java.util.Scanner;
-
+//new java app
 public class ShiFuMi {
     public static void main(String[] args){
         int player;
