@@ -17,7 +17,7 @@ public class ShiFuMi {
 
 
         Scanner nc = new Scanner(System.in);
-        System.out.println("Rock Paper Scissos\n");
+        System.out.println("Rock Paper Scissos Game \n");
 
         while(game) {
             pc = Min + (int)(Math.random() * ((Max - Min) + 1));
@@ -29,7 +29,7 @@ public class ShiFuMi {
                 System.out.print("Give your choice :  ");
                 player = nc.nextInt();
                 if(player != 1 && player != 2 && player != 3)
-                { System.out.println("Error you should give 1 or 2 or 3\n"); }
+                { System.out.println("Error you should between 1 , 2 or 3\n"); }
             }while(player != 1 && player != 2 && player != 3);
 
 
@@ -71,10 +71,11 @@ public class ShiFuMi {
                     draw++;
                 }
             }
-            System.out.println("\nScore");
-            System.out.println("Win : "+win);
-            System.out.println("Draw : "+draw);
-            System.out.println("Lose : "+lose);
+            System.out.println("\n_____ Score _____");
+            System.out.println("|   Win : "+win);
+            System.out.println("|   Draw : "+draw);
+            System.out.println("|   Lose : "+lose);
+            System.out.println("____________________");
             System.out.println("\n");
 
 
@@ -92,10 +93,12 @@ public class ShiFuMi {
             System.out.println("\n");
             game_number++;
         }
-        System.out.println("\nFinal score");
-        System.out.println("Win : "+win);
-        System.out.println("Draw : "+draw);
-        System.out.println("Lose : "+lose);
+        System.out.println("\n_____ Final score _____");
+        System.out.println("|       Win : "+win);
+        System.out.println("|       Draw : "+draw);
+        System.out.println("|       Lose : "+lose);
+        System.out.println("_________________________");
+        
     }
     }
 
